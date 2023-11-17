@@ -9,34 +9,58 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var base: Int = 1
-    var squared: Int {
-        return base * base
+    @State var firstNumber: Int = 1
+    @State var secondNumber: Int = 1
+    var sum: Int {
+        return firstNumber + secondNumber
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             
             Spacer()
             
-            HStack(alignment: .top) {
+            HStack() {
                 
-                Text("(\(base))")
-                    .font(.system(size: 96))
+                Spacer()
                 
-                Text("2")
-                    .font(.system(size: 44))
-                
-                Text("=")
-                    .font(.system(size: 96))
-                
-                Text("\(squared)")
-                    .font(.system(size: 96))
+                Text("\(firstNumber)")
+                    .font(.system(size: 60))
+                    .padding(.horizontal, 35)
             }
             
-            Stepper(value: $base, label: {
-                Text("Base")
+            Stepper(value: $firstNumber, label: {
+                Text("Select first number")
             })
+            
+            
+            HStack() {
+                
+                Text("+")
+                    .font(.system(size: 60))
+                    .padding(.horizontal, 35)
+                
+                Spacer()
+                
+                Text("\(secondNumber)")
+                    .font(.system(size: 60))
+                    .padding(.horizontal, 35)
+            }
+            
+            Stepper(value: $secondNumber, label: {
+                Text("Select second number")
+            })
+            
+            Divider()
+            
+            HStack() {
+                
+                Spacer()
+                
+                Text("\(sum)")
+                    .font(.system(size: 60))
+                    .padding(.horizontal, 35)
+            }
             
             Spacer()
         }
