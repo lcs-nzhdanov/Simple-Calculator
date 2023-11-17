@@ -16,7 +16,9 @@ struct Plus: View {
     }
     
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(
+            spacing: 10
+        ) {
             
             Spacer()
             
@@ -24,31 +26,64 @@ struct Plus: View {
                 
                 Spacer()
                 
-                Text("\(firstNumber)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(firstNumber)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
-            Stepper(value: $firstNumber, label: {
-                Text("Select first number")
+            Stepper(value: $firstNumber,
+                    label: {
+                Text(
+                    "Select first number"
+                )
             })
             
             
             HStack() {
                 
-                Image(systemName: "plus")
-                    .font(.system(size: 50))
-                    .padding(.horizontal, 35)
+                Image(
+                    systemName: "plus"
+                )
+                .font(
+                    .system(
+                        size: 50
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
                 
                 Spacer()
                 
-                Text("\(secondNumber)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(secondNumber)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
-            Stepper(value: $secondNumber, label: {
-                Text("Select second number")
+            Stepper(value: $secondNumber,
+                    label: {
+                Text(
+                    "Select second number"
+                )
             })
             
             Divider()
@@ -57,9 +92,18 @@ struct Plus: View {
                 
                 Spacer()
                 
-                Text("\(result)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(result)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
             Spacer()
@@ -77,7 +121,9 @@ struct Minus: View {
     }
     
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(
+            spacing: 10
+        ) {
             
             Spacer()
             
@@ -85,31 +131,64 @@ struct Minus: View {
                 
                 Spacer()
                 
-                Text("\(firstNumber)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(firstNumber)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
-            Stepper(value: $firstNumber, label: {
-                Text("Select first number")
+            Stepper(value: $firstNumber,
+                    label: {
+                Text(
+                    "Select first number"
+                )
             })
             
             
             HStack() {
                 
-                Image(systemName: "minus")
-                    .font(.system(size: 50))
-                    .padding(.horizontal, 35)
+                Image(
+                    systemName: "minus"
+                )
+                .font(
+                    .system(
+                        size: 50
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
                 
                 Spacer()
                 
-                Text("\(secondNumber)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(secondNumber)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
-            Stepper(value: $secondNumber, label: {
-                Text("Select second number")
+            Stepper(value: $secondNumber,
+                    label: {
+                Text(
+                    "Select second number"
+                )
             })
             
             Divider()
@@ -118,9 +197,18 @@ struct Minus: View {
                 
                 Spacer()
                 
-                Text("\(result)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(result)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
             Spacer()
@@ -138,7 +226,9 @@ struct Multiply: View {
     }
     
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(
+            spacing: 10
+        ) {
             
             Spacer()
             
@@ -146,31 +236,64 @@ struct Multiply: View {
                 
                 Spacer()
                 
-                Text("\(firstNumber)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(firstNumber)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
-            Stepper(value: $firstNumber, label: {
-                Text("Select first number")
+            Stepper(value: $firstNumber,
+                    label: {
+                Text(
+                    "Select first number"
+                )
             })
             
             
             HStack() {
                 
-                Image(systemName: "multiply")
-                    .font(.system(size: 50))
-                    .padding(.horizontal, 35)
+                Image(
+                    systemName: "multiply"
+                )
+                .font(
+                    .system(
+                        size: 50
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
                 
                 Spacer()
                 
-                Text("\(secondNumber)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(secondNumber)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
-            Stepper(value: $secondNumber, label: {
-                Text("Select second number")
+            Stepper(value: $secondNumber,
+                    label: {
+                Text(
+                    "Select second number"
+                )
             })
             
             Divider()
@@ -179,9 +302,18 @@ struct Multiply: View {
                 
                 Spacer()
                 
-                Text("\(result)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(result)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
             Spacer()
@@ -195,15 +327,17 @@ struct Divide: View {
     @State var firstNumber: Int = 1
     @State var secondNumber: Int = 1
     var result: String {
-            if secondNumber == 0 {
-                return "Cannot divide by zero" // Return an error message as a String
-            } else {
-                return "\(firstNumber / secondNumber)"
-            }
+        if secondNumber == 0 {
+            return "Cannot divide by zero" // Return an error message as a String
+        } else {
+            return "\(firstNumber / secondNumber)"
         }
+    }
     
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(
+            spacing: 10
+        ) {
             
             Spacer()
             
@@ -211,31 +345,64 @@ struct Divide: View {
                 
                 Spacer()
                 
-                Text("\(firstNumber)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(firstNumber)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
-            Stepper(value: $firstNumber, label: {
-                Text("Select first number")
+            Stepper(value: $firstNumber,
+                    label: {
+                Text(
+                    "Select first number"
+                )
             })
             
             
             HStack() {
                 
-                Image(systemName: "divide")
-                    .font(.system(size: 50))
-                    .padding(.horizontal, 35)
+                Image(
+                    systemName: "divide"
+                )
+                .font(
+                    .system(
+                        size: 50
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
                 
                 Spacer()
                 
-                Text("\(secondNumber)")
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    "\(secondNumber)"
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
-            Stepper(value: $secondNumber, label: {
-                Text("Select second number")
+            Stepper(value: $secondNumber,
+                    label: {
+                Text(
+                    "Select second number"
+                )
             })
             
             Divider()
@@ -244,9 +411,18 @@ struct Divide: View {
                 
                 Spacer()
                 
-                Text(result)
-                    .font(.system(size: 60))
-                    .padding(.horizontal, 35)
+                Text(
+                    result
+                )
+                .font(
+                    .system(
+                        size: 60
+                    )
+                )
+                .padding(
+                    .horizontal,
+                    35
+                )
             }
             
             Spacer()
@@ -262,31 +438,57 @@ struct Divide: View {
         
         Plus()
             .tabItem {
-                Image(systemName: "plus")
-                Text("Plus")
+                Image(
+                    systemName: "plus"
+                )
+                Text(
+                    "Plus"
+                )
             }
-            .tag(1)
+            .tag(
+                1
+            )
         
         Minus()
             .tabItem {
-                Image(systemName: "minus")
-                Text("Minus")
+                Image(
+                    systemName: "minus"
+                )
+                Text(
+                    "Minus"
+                )
             }
-            .tag(2)
+            .tag(
+                2
+            )
         
         Multiply()
             .tabItem {
-                Image(systemName: "multiply")
-                Text("Multiply")
+                Image(
+                    systemName: "multiply"
+                )
+                Text(
+                    "Multiply"
+                )
             }
-            .tag(3)
+            .tag(
+                3
+            )
         
         Divide()
             .tabItem {
-                Image(systemName: "divide")
-                Text("Divide")
+                Image(
+                    systemName: "divide"
+                )
+                Text(
+                    "Divide"
+                )
             }
-            .tag(4)
+            .tag(
+                4
+            )
     }
-    .accentColor(.blue)
+    .accentColor(
+        .blue
+    )
 }
